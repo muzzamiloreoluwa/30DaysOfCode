@@ -1,0 +1,119 @@
+
+/* GENERALS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navigation Menu */
+nav{
+    width: 100%;
+}
+ul {
+    background-color: rgb(34, 34, 34);
+    padding: 0px 3rem;
+}
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: 1.5px solid peru;
+    padding: 0.3rem 1rem;
+}
+@media screen and (min-width: 980px){
+    .nav-brand {
+        margin-right: 25rem;
+    }
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.6rem 0.6rem;
+    font-size: 1.2rem;
+}
+.nav-links {
+    color: white;
+    padding: 0.6rem 0.6rem;    
+}
+.nav-links:hover {
+    background-color: peru;
+}
+.nav-links:active {
+    background-color: peru;
+}
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    ul {
+        padding-left: 1rem;
+    }
+}
+
+/* Main Section */
+section {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: peru;
+    padding: 2rem 4rem;
+}
+@media screen and (max-width: 1300px){
+    section{
+        text-align: center;
+        padding: 2rem 2rem;
+    }
+    .img{
+        width: 350px;
+        height: 500px;
+    }
+    .left-child {
+        text-align: left;
+    }
+}
+h1 {
+    color: white;
+    font-size: 65px;
+    margin-bottom: 0.7rem;
+    transition: 1s;
+}
+@media screen and (max-width: 900px){
+    section{
+        display: block;
+    }
+    .left-child {
+        margin-bottom: 3rem;
+    }
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 55px;
+    }
+}
+}
+h1 p {
+    text-align: center;
+}
+p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+/* Contact Button */
+.site{
+    font-weight: bold;
+    padding: 0.5rem;
+    color: rgb(113, 13, 243);
+    border: 2px solid rgb(113, 13, 243);
+    transition: background-color 1s, padding 1s, border-radius 1s;
+}
+.site:hover{
+    background-color: white;
+    padding: 0.5rem 4rem;
+    border-radius: 6px;
+}
